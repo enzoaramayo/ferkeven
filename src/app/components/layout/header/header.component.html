@@ -1,21 +1,17 @@
-<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-    <a class="navbar-brand" href="#">Header works!</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
+<nav class="navbar navbar-expand-md">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h1>
+                {{ 'home.title' | translate }}
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col-12"> <button (click)="toogleLanguage('es')"><img src="/assets/images/spain.png"
+            alt="spain" /></button>
+                <button (click)="toogleLanguage('en')"><img src="/assets/images/uk.png" alt="united-kingdom" /></button>
+            </div>
+        </div>
 
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/home">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/contact-list">Contacts</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/contact-create">Create</a>
-            </li>
-
-        </ul>
     </div>
+
 </nav>

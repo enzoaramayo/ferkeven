@@ -1,0 +1,15 @@
+img {
+    width: 2em;
+    background: transparent;
+}
+
+img:hover {
+    -webkit-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
+}
+
+button {
+    background: transparent;
+    border: none;
+}
